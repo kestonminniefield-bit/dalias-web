@@ -1,0 +1,98 @@
+{
+  "theme": "Light theme",
+  "project_context": {
+    "aesthetic": "Cute and cozy, NYC bodega-style corner deli/kitchen",
+    "vibe": "Warm, tactile, nostalgic but modern, appetizing",
+    "pages": "Single-page marketing site + small Admin view for contact messages"
+  },
+  "typography": {
+    "headings": "Fraunces (Warm, vintage, soft serif). Use tracking-tight or tracking-tighter for large headlines.",
+    "body": "Outfit (Clean, modern, rounded geometric sans-serif). Use leading-relaxed.",
+    "rules": "NEVER use Inter, Roboto, or generic sans for headings. Use fluid text sizing (e.g., text-5xl sm:text-6xl) for the hero, never exceeding 6xl. Menu numbers (01, 02) should be in Fraunces, prominent and slightly offset.",
+    "installation": "Import Google Fonts for Fraunces and Outfit in index.css"
+  },
+  "colors": {
+    "background": "#FFFBF5",
+    "surface_primary": "#F5EBE1",
+    "surface_secondary": "#EAE0D5",
+    "text_primary": "#2D2825",
+    "text_secondary": "#5C534D",
+    "brand_accent": "#D95333",
+    "brand_accent_hover": "#BD472A",
+    "border": "#E8D8C8",
+    "rules": "Avoid pure #000000 and #FFFFFF. Maintain an 'Organic & Earthy' warm palette (Oat/Cream, Espresso text, Bodega Awning Red accent). Do not use flat defaults. Do NOT use dark colors as gradients."
+  },
+  "visual_enhancers": {
+    "surfaces": "Use solid flat backgrounds with warm tinted borders (border-[#E8D8C8]). Soft, diffuse shadows (shadow-sm) rather than harsh drop shadows.",
+    "textures": "Incorporate a subtle SVG noise/grain overlay on the page body to give it a tactile, 'paper/bodega' feel.",
+    "marquee": "The 'Editorial Ribbon' pattern. Slow, smooth drift. Background #F5EBE1, text #D95333, text-sm, wide spacing (gap-24)."
+  },
+  "components": {
+    "hero": "Kinetic masked text reveal using Framer Motion (staggered line-by-line). Hero image should have a very subtle warm overlay (e.g., bg-[#2D2825]/30), ensuring the food/location is visible.",
+    "navigation": "Sticky header with glassmorphism (backdrop-blur-xl bg-[#FFFBF5]/80) and 1px bottom border.",
+    "menu_section": "Numbered chapters (01. Breakfast, 02. Lunch). Search input should be pill-shaped, warm border, custom focus ring (focus:ring-[#D95333]). List items with clean right-aligned prices.",
+    "buttons": "Pill-shaped (rounded-full). Primary buttons use brand_accent (#D95333) with text_primary (#FFFBF5). Apply a hover scale (scale-105) and active press effect.",
+    "admin_dashboard": "High Density Grid (Bento style). Cardless or very slight border-radius (rounded-xl) with solid background for messages.",
+    "map": "Embed Google Maps iframe with rounded-2xl corners, wrapped in a warm border.",
+    "contact_form": "Floating label style or clean modern inputs. Minimalist. Save state locally to show in admin view."
+  },
+  "layouts": {
+    "general": "Use generous spacing (p-8 to p-24). Mobile-first responsive grids. Break symmetry: offset menu categories slightly. Container must not be center-aligned globally.",
+    "admin": "Responsive CSS Grid (grid-cols-1 md:grid-cols-2 lg:grid-cols-3) with tight gaps (gap-6) for viewing messages."
+  },
+  "motion": {
+    "scrolling": "MUST use 'lenis' (@studio-freight/react-lenis) for smooth momentum scrolling. Wraps the main layout.",
+    "animations": "Use Framer Motion. Elements should fade and slide up slightly on scroll. Staggered reveal for menu items."
+  },
+  "accessibility": {
+    "contrast": "This project explicitly requested 'NOT ADA compliant'. This gives freedom to use subtle low-contrast text for decorative elements (like chapter subtitles), but keep core menu items and prices readable.",
+    "testing": "All interactive and key informational elements MUST include a data-testid attribute."
+  },
+  "media": {
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1603418735208-86f031556a5a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwyfHxjb3p5JTIwbmVpZ2hib3Job29kJTIwZGluZXIlMjBleHRlcmlvcnxlbnwwfHx8fDE3ODgyMzk0NjN8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Red and white neighborhood diner exterior",
+        "category": "Hero / Location Banner"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1642694358592-e4df77878e6d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTF8MHwxfHNlYXJjaHwzfHxkZWxpJTIwc2FuZHdpY2h8ZW58MHx8fHwxNzg4MjM5NDYzfDA&ixlib=rb-4.1.0&q=85",
+        "description": "Person holding a delicious deli sandwich",
+        "category": "Menu Highlight - Lunch / Specials"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1692188839940-8521dc455e0f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwzfHxjb2ZmZWUlMjBhdm9jYWRvJTIwdG9hc3R8ZW58MHx8fHwxNzg4MjM5NDYzfDA&ixlib=rb-4.1.0&q=85",
+        "description": "Coffee and avocado toast on a dark background",
+        "category": "Menu Highlight - Breakfast"
+      }
+    ]
+  },
+  "libraries": {
+    "animation": "framer-motion",
+    "scroll": "@studio-freight/react-lenis",
+    "marquee": "react-fast-marquee",
+    "icons": "lucide-react",
+    "forms": "react-hook-form (optional, or vanilla React state for simple implementation)"
+  },
+  "instructions_to_main_agent": [
+    "Write components in .js or .jsx (not .tsx since this project uses JavaScript).",
+    "Do NOT use HTML-based components for advanced user interactions. Use custom tailored components or heavily styled ones matching the bodegas/deli theme.",
+    "Implement the 'Admin View' as a separate route or a conditional render (e.g. /admin) containing a simple grid of submitted contact forms."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "You tend to converge toward generic outputs. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "You MUST NOT apply universal transition (e.g., transition: all). Add transitions for specific interactive elements.",
+    "You MUST NOT center align the app container (.App { text-align: center; }).",
+    "Always use modern button styles like pill-shaped with interaction animations & color relevant to the app style.",
+    "NEVER use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Subtle grain textures, noise overlays, custom cursors separate good from extraordinary.",
+    "Missing categories = main agent will use placeholder text which is FORBIDDEN. Use the provided image URLs.",
+    "DO NOT use complete transparent background in header, overlays, or any surface that has content under it.",
+    "All interactive and key informational elements MUST include a data-testid attribute."
+  ]
+}
