@@ -95,16 +95,18 @@ export const Hero = () => {
 
         <motion.div style={{ y: imgY }} className="relative md:col-span-6">
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, scale: 0.94, rotate: 4 }}
+            animate={{ opacity: 1, scale: 1, rotate: 2 }}
             transition={{ delay: 0.5, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+            className="relative overflow-hidden rounded-[2.5rem] border border-[#E8D8C8] shadow-sm"
           >
             <img
-              src={IMAGES.logo}
-              alt="Dalia's Harlem Cafe sign — pink letters and daisies"
+              src={IMAGES.baconEggCheese}
+              alt="Bacon, egg and cheese on a roll at Dalia's Harlem Cafe"
               data-testid="hero-image"
-              className="w-full"
+              className="aspect-[4/3] w-full object-cover md:aspect-[5/4]"
             />
+            <div className="absolute inset-0 bg-[#2D2825]/10" />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
