@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown, Phone } from "lucide-react";
 import { BUSINESS, IMAGES } from "../data/business";
 
-const LINES = ["Homecooked breakfast,", "straight from", "Harlem's corner."];
+const LINES = ["Look for the", "pink daisies", "on the block."];
 
 export const Hero = () => {
   const ref = useRef(null);
@@ -35,9 +35,9 @@ export const Hero = () => {
                   animate={{ y: 0 }}
                   transition={{ delay: 0.2 + i * 0.13, duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
                 >
-                  {i === 2 ? (
+                  {i === 1 ? (
                     <>
-                      Harlem's <span className="italic text-[#D95333]">corner.</span>
+                      <span className="italic text-[#D95333]">pink daisies</span>
                     </>
                   ) : (
                     line
@@ -101,10 +101,10 @@ export const Hero = () => {
             className="relative overflow-hidden rounded-[2.5rem] border border-[#E8D8C8] shadow-sm"
           >
             <img
-              src={IMAGES.choppedCheese}
-              alt="Chopped cheese sandwich, fresh off the griddle at Dalia's Harlem Cafe"
+              src={IMAGES.hero}
+              alt="Dalia's Harlem Cafe storefront with the pink daisy sign"
               data-testid="hero-image"
-              className="aspect-[4/3] w-full object-cover md:aspect-[5/4]"
+              className="aspect-[4/5] w-full object-cover"
             />
             <div className="absolute inset-0 bg-[#2D2825]/10" />
           </motion.div>
