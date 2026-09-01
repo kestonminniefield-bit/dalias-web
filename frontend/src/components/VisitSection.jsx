@@ -66,7 +66,7 @@ export const VisitSection = () => (
       >
         <div className="overflow-hidden rounded-2xl border border-[#E8D8C8] shadow-sm">
           <iframe
-            title="Map to The Corner Kitchen"
+            title="Map to Dalia's Harlem Cafe"
             data-testid="visit-map"
             src={BUSINESS.mapEmbed}
             className="h-[380px] w-full md:h-[460px]"

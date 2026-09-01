@@ -1,13 +1,13 @@
 export const BUSINESS = {
-  name: "The Corner Kitchen",
+  name: "Dalia's Harlem Cafe",
   tagline: "A cozy neighborhood kitchen & deli",
-  phone: "(718) 555-0134",
-  phoneHref: "tel:+17185550134",
-  address: "123 Grand Street, Brooklyn, NY 11249",
+  phone: "(646) 692-3878",
+  phoneHref: "tel:+16466923878",
+  address: "2394 Adam Clayton Powell Jr Blvd, New York, NY 10030",
   mapEmbed:
-    "https://www.google.com/maps?q=123%20Grand%20Street%2C%20Brooklyn%2C%20NY%2011249&output=embed",
+    "https://www.google.com/maps?q=2394%20Adam%20Clayton%20Powell%20Jr%20Blvd%2C%20New%20York%2C%20NY%2010030&output=embed",
   directionsUrl:
-    "https://www.google.com/maps/dir/?api=1&destination=123+Grand+Street+Brooklyn+NY+11249",
+    "https://www.google.com/maps/dir/?api=1&destination=2394+Adam+Clayton+Powell+Jr+Blvd+New+York+NY+10030",
   hours: [
     { days: "Monday – Friday", time: "6:00 AM – 8:00 PM" },
     { days: "Saturday", time: "7:00 AM – 6:00 PM" },

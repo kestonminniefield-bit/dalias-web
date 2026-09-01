@@ -117,7 +117,7 @@ export default function Admin() {
       <header className="border-b border-[#E8D8C8] bg-[#FFFBF5]/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
           <p className="font-display text-xl font-semibold tracking-tight text-[#2D2825]">
-            Corner Kitchen <span className="italic text-[#D95333]">Inbox</span>
+            Dalia's Harlem Cafe <span className="italic text-[#D95333]">Inbox</span>
           </p>
           <div className="flex items-center gap-4">
             <a href="/" data-testid="admin-view-site" className="text-sm text-[#5C534D] transition-colors hover:text-[#D95333]">View site</a>

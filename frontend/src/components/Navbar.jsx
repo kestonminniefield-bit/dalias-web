@@ -19,7 +19,7 @@ export const Navbar = () => {
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#top" data-testid="nav-logo" className="font-display text-xl font-semibold tracking-tight text-[#2D2825]">
-          The Corner <span className="italic text-[#D95333]">Kitchen</span>
+          Dalia's Harlem <span className="italic text-[#D95333]">Cafe</span>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">

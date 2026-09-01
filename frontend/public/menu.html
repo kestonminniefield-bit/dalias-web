@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dalia's Harlem Cafe — Menu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --cream: #FFFBF5;
+    --oat: #F5EBE1;
+    --ink: #2D2825;
+    --soft: #5C534D;
+    --red: #D95333;
+    --border: #E8D8C8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Outfit', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    padding: 48px 24px 96px;
+  }
+  .page { max-width: 760px; margin: 0 auto; }
+  header { text-align: left; border-bottom: 2px solid var(--border); padding-bottom: 32px; margin-bottom: 48px; }
+  .kicker { font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--red); font-weight: 600; }
+  h1 { font-family: 'Fraunces', serif; font-size: clamp(36px, 6vw, 56px); font-weight: 600; letter-spacing: -0.02em; margin-top: 8px; }
+  h1 em { color: var(--red); }
+  .meta { margin-top: 16px; font-size: 14px; color: var(--soft); line-height: 1.7; }
+  .meta a { color: var(--red); text-decoration: none; font-weight: 600; }
+  section { margin-bottom: 56px; }
+  .cat-head { display: flex; align-items: baseline; gap: 16px; margin-bottom: 6px; }
+  .num { font-family: 'Fraunces', serif; font-style: italic; font-weight: 300; font-size: 40px; color: var(--red); opacity: 0.5; }
+  h2 { font-family: 'Fraunces', serif; font-size: 28px; font-weight: 600; letter-spacing: -0.01em; }
+  .note { font-size: 13px; color: var(--soft); margin: 6px 0 18px; max-width: 460px; line-height: 1.6; }
+  ul { list-style: none; }
+  li.item { display: flex; align-items: baseline; gap: 12px; padding: 10px 0; }
+  .name { font-weight: 500; }
+  .desc { font-size: 13px; color: var(--soft); font-weight: 400; margin-top: 2px; }
+  .leader { flex: 1; border-bottom: 1px dashed var(--border); min-width: 24px; }
+  .price { font-family: 'Fraunces', serif; font-weight: 600; font-size: 17px; color: var(--red); white-space: nowrap; }
+  @media (min-width: 640px) {
+    ul.two-col { columns: 2; column-gap: 40px; }
+    li.item { break-inside: avoid; }
+  }
+  footer { border-top: 2px solid var(--border); padding-top: 24px; font-size: 13px; color: var(--soft); }
+  .callbar {
+    position: fixed; bottom: 16px; right: 16px;
+    background: var(--red); color: var(--cream);
+    font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 14px;
+    padding: 14px 22px; border-radius: 999px; text-decoration: none;
+    box-shadow: 0 8px 24px rgba(217, 83, 51, 0.35);
+  }
+  @media print {
+    body { padding: 24px; }
+    .callbar { display: none; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <p class="kicker">Kitchen &amp; Deli — Harlem</p>
+    <h1>Dalia's Harlem <em>Cafe</em></h1>
+    <p class="meta">
+      2394 Adam Clayton Powell Jr Blvd, New York, NY 10030<br />
+      <a href="tel:+16466923878">(646) 692-3878</a> — call ahead, we'll have it ready
+    </p>
+  </header>
+
+  <section>
+    <div class="cat-head"><span class="num">01</span><h2>Breakfast</h2></div>
+    <p class="note">Served all morning on a roll, hero, or toast.</p>
+    <ul class="two-col">
+      <li class="item"><span><span class="name">Bacon &amp; Egg Sandwich</span><span class="desc">The classic wake-up call.</span></span><span class="leader"></span><span class="price">$7.00</span></li>
+      <li class="item"><span class="name">Egg &amp; Cheese Sandwich</span><span class="leader"></span><span class="price">$8.50</span></li>
+      <li class="item"><span class="name">Egg, Cheese &amp; Turkey Bacon</span><span class="leader"></span><span class="price">$9.00</span></li>
+      <li class="item"><span class="name">Egg, Cheese &amp; Hot Beef Sausage</span><span class="leader"></span><span class="price">$9.00</span></li>
+      <li class="item"><span><span class="name">B.L.T</span><span class="desc">Bacon, lettuce &amp; tomato.</span></span><span class="leader"></span><span class="price">$9.00</span></li>
+      <li class="item"><span><span class="name">Turkey B.L.T</span><span class="desc">Turkey bacon, lettuce &amp; tomato.</span></span><span class="leader"></span><span class="price">$10.00</span></li>
+      <li class="item"><span class="name">B.L.T w/ Avocado</span><span class="leader"></span><span class="price">$12.50</span></li>
+      <li class="item"><span class="name">Avocado Toast</span><span class="leader"></span><span class="price">$12.00</span></li>
+      <li class="item"><span class="name">Side Guacamole w/ Chips</span><span class="leader"></span><span class="price">$10.00</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="cat-head"><span class="num">02</span><h2>Wings</h2></div>
+    <p class="note">Prices are 6 pc / 10 pc. Add extra wings +$1.50 each.</p>
+    <ul class="two-col">
+      <li class="item"><span class="name">Classic Wings</span><span class="leader"></span><span class="price">$10.00 / $14.00</span></li>
+      <li class="item"><span class="name">Buffalo</span><span class="leader"></span><span class="price">$10.50 / $14.50</span></li>
+      <li class="item"><span class="name">Lemon Pepper</span><span class="leader"></span><span class="price">$10.50 / $14.50</span></li>
+      <li class="item"><span class="name">Honey BBQ</span><span class="leader"></span><span class="price">$10.50 / $14.50</span></li>
+      <li class="item"><span class="name">Teriyaki</span><span class="leader"></span><span class="price">$10.50 / $14.50</span></li>
+      <li class="item"><span class="name">Garlic Parmesan</span><span class="leader"></span><span class="price">$10.50 / $14.50</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="cat-head"><span class="num">03</span><h2>Lunch</h2></div>
+    <p class="note">Make any sandwich Deluxe with fries &amp; a soda — +$3.50.</p>
+    <ul class="two-col">
+      <li class="item"><span><span class="name">Cheeseburger</span><span class="desc">5 oz, lettuce, tomato, onions, mayo &amp; pickles.</span></span><span class="leader"></span><span class="price">$10.50</span></li>
+      <li class="item"><span class="name">Double Cheeseburger</span><span class="leader"></span><span class="price">$14.50</span></li>
+      <li class="item"><span><span class="name">Turkey Burger</span><span class="desc">Add cheese +$1.00.</span></span><span class="leader"></span><span class="price">$10.50</span></li>
+      <li class="item"><span><span class="name">Chopped Cheese</span><span class="desc">Lettuce, tomato, grilled onions &amp; mayo.</span></span><span class="leader"></span><span class="price">$10.50</span></li>
+      <li class="item"><span><span class="name">Fish Sandwich</span><span class="desc">Tartar sauce &amp; lettuce.</span></span><span class="leader"></span><span class="price">$10.00</span></li>
+      <li class="item"><span><span class="name">Grilled Chicken</span><span class="desc">Lettuce, tomato &amp; mayo.</span></span><span class="leader"></span><span class="price">$10.50</span></li>
+      <li class="item"><span><span class="name">Philly Cheesesteak</span><span class="desc">Mayo, onions &amp; peppers.</span></span><span class="leader"></span><span class="price">$12.50</span></li>
+      <li class="item"><span class="name">Mozzarella Sticks (6 pc)</span><span class="leader"></span><span class="price">$8.50</span></li>
+      <li class="item"><span class="name">Chicken Tenders (6 pc)</span><span class="leader"></span><span class="price">$11.00</span></li>
+      <li class="item"><span><span class="name">Chicken Quesadilla</span><span class="desc">Cheese &amp; chicken, topped with lettuce &amp; tomato.</span></span><span class="leader"></span><span class="price">$11.00</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="cat-head"><span class="num">04</span><h2>Salads</h2></div>
+    <p class="note">Fresh-chopped every morning.</p>
+    <ul>
+      <li class="item"><span><span class="name">Caesar Salad</span><span class="desc">Add grilled chicken — $13.00.</span></span><span class="leader"></span><span class="price">$9.00</span></li>
+      <li class="item"><span><span class="name">House Salad</span><span class="desc">Romaine, onions, tomatoes &amp; cucumbers. Add chicken — $14.00.</span></span><span class="leader"></span><span class="price">$10.00</span></li>
+      <li class="item"><span><span class="name">Cobb Salad</span><span class="desc">Romaine, onions, tomatoes, cucumbers, avocado &amp; bacon. Add boiled eggs +$2.00, chicken — $17.00.</span></span><span class="leader"></span><span class="price">$14.00</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="cat-head"><span class="num">05</span><h2>Spanish Lunch Specials</h2></div>
+    <p class="note">Certain items change daily — call to inquire. Your choice of rice (white or yellow) &amp; beans (black or red).</p>
+    <ul>
+      <li class="item"><span class="name">Pork Chop</span><span class="leader"></span><span class="price">$11.00</span></li>
+      <li class="item"><span class="name">Beef Stew</span><span class="leader"></span><span class="price">$16.00</span></li>
+      <li class="item"><span class="name">Fried Whiting</span><span class="leader"></span><span class="price">$11.00</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="cat-head"><span class="num">06</span><h2>Beverages</h2></div>
+    <p class="note">Hot drinks are 12 oz / 16 oz.</p>
+    <ul class="two-col">
+      <li class="item"><span class="name">Coffee</span><span class="leader"></span><span class="price">$2.50 / $3.00</span></li>
+      <li class="item"><span class="name">Flavored Coffee</span><span class="leader"></span><span class="price">$2.50 / $3.00</span></li>
+      <li class="item"><span class="name">Tea</span><span class="leader"></span><span class="price">$2.50 / $3.00</span></li>
+      <li class="item"><span class="name">Herbal Tea</span><span class="leader"></span><span class="price">$3.00 / $4.00</span></li>
+      <li class="item"><span class="name">Can Soda</span><span class="leader"></span><span class="price">$2.50</span></li>
+      <li class="item"><span class="name">Red Bull (8.4 oz)</span><span class="leader"></span><span class="price">$4.00</span></li>
+      <li class="item"><span class="name">Water</span><span class="leader"></span><span class="price">$1.50</span></li>
+      <li class="item"><span class="name">Apple Juice</span><span class="leader"></span><span class="price">$3.50</span></li>
+      <li class="item"><span class="name">Orange Juice</span><span class="leader"></span><span class="price">$3.50</span></li>
+      <li class="item"><span class="name">Cranberry Juice</span><span class="leader"></span><span class="price">$3.50</span></li>
+      <li class="item"><span class="name">Bottle Soda</span><span class="leader"></span><span class="price">$3.50</span></li>
+      <li class="item"><span class="name">Gatorade</span><span class="leader"></span><span class="price">$3.50</span></li>
+    </ul>
+  </section>
+
+  <footer>
+    Dalia's Harlem Cafe · 2394 Adam Clayton Powell Jr Blvd, New York, NY 10030 · <a href="tel:+16466923878" style="color: var(--red); text-decoration: none; font-weight: 600;">(646) 692-3878</a>
+  </footer>
+</div>
+
+<a class="callbar" href="tel:+16466923878">Tap to call — (646) 692-3878</a>
+</body>
+</html>

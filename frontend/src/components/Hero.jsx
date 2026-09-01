@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown, Phone } from "lucide-react";
 import { BUSINESS, IMAGES } from "../data/business";
 
-const LINES = ["Hot coffee,", "warm plates,", "& the coziest", "corner in Brooklyn."];
+const LINES = ["Hot coffee,", "warm plates,", "& the coziest", "corner in Harlem."];
 
 export const Hero = () => {
   const ref = useRef(null);
@@ -92,7 +92,7 @@ export const Hero = () => {
           >
             <img
               src={IMAGES.hero}
-              alt="The Corner Kitchen storefront"
+              alt="Dalia's Harlem Cafe storefront"
               data-testid="hero-image"
               className="aspect-[4/5] w-full object-cover"
             />

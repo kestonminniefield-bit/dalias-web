@@ -7,7 +7,7 @@ Build a simple, modern, easy-to-use restaurant website with: a searchable, mobil
 - Design: "Cute and cozy" (warm cream/espresso/bodega-red palette, Fraunces + Outfit type)
 - Contact messages: saved to DB, viewed in an admin page (no email)
 - Scrambled menu text: organized into clean categories with best interpretation
-- Restaurant name/address/phone: user said they'd provide but didn't — realistic PLACEHOLDERS in use (The Corner Kitchen, 123 Grand Street Brooklyn, (718) 555-0134). Update in /app/frontend/src/data/business.js when real details arrive.
+- Restaurant name/address/phone: REAL details provided 2026-09-01 — Dalia's Harlem Cafe, 2394 Adam Clayton Powell Jr Blvd, New York, NY 10030, (646) 692-3878. Hours remain placeholders.
 
 ## Architecture
 - Frontend: React (CRA/craco), react-router-dom, framer-motion, lenis smooth scroll, Tailwind. Single-page site at `/` + admin at `/admin`.
