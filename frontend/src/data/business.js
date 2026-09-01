@@ -15,6 +15,7 @@ export const BUSINESS = {
 
 export const IMAGES = {
   hero: "/images/storefront.webp",
+  interior: "/images/interior.webp",
   choppedCheese: "/images/chopped-cheese.webp",
   sausageEggCheese: "/images/sausage-egg-cheese.webp",
   breakfastPlate: "/images/breakfast-plate.webp",
