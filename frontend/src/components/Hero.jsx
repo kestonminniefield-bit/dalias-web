@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown, Phone } from "lucide-react";
 import { BUSINESS, IMAGES } from "../data/business";
 
-const LINES = ["Hot coffee,", "warm plates,", "& the coziest", "corner in Harlem."];
+const LINES = ["Up early", "and hungry?", "We're already", "on the griddle."];
 
 export const Hero = () => {
   const ref = useRef(null);
@@ -23,7 +23,7 @@ export const Hero = () => {
             className="mb-8 inline-flex items-center gap-2 rounded-full border border-[#E8D8C8] bg-[#F5EBE1] px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#5C534D]"
           >
             <span className="h-2 w-2 rounded-full bg-[#D95333]" />
-            Kitchen & Deli — open daily
+            Open daily from 8 AM — griddle's hot
           </motion.p>
 
           <h1 className="font-display text-5xl font-semibold leading-[1.05] tracking-tight text-[#2D2825] sm:text-6xl">
@@ -37,7 +37,7 @@ export const Hero = () => {
                 >
                   {i === 2 ? (
                     <>
-                      & the <span className="italic text-[#D95333]">coziest</span>
+                      We're <span className="italic text-[#D95333]">already</span>
                     </>
                   ) : (
                     line
@@ -54,8 +54,8 @@ export const Hero = () => {
             data-testid="hero-subtext"
             className="mt-8 max-w-md text-base leading-relaxed text-[#5C534D] md:text-lg"
           >
-            Breakfast sandwiches at sunrise, chopped cheese at lunch, and Spanish
-            specials that change with the day — all made steps from your front door.
+            Bacon, egg & cheese before the train, coffee that wakes you up kindly,
+            and a hot breakfast waiting five minutes after you call it in.
           </motion.p>
 
           <motion.div
