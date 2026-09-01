@@ -15,6 +15,10 @@ export const BUSINESS = {
 
 export const IMAGES = {
   hero: "/images/storefront.webp",
-  sandwich: "https://images.unsplash.com/photo-1642694358592-e4df77878e6d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTF8MHwxfHNlYXJjaHwzfHxkZWxpJTIwc2FuZHdpY2h8ZW58MHx8fHwxNzg4MjM5NDYzfDA&ixlib=rb-4.1.0&q=85",
-  breakfast: "https://images.unsplash.com/photo-1692188839940-8521dc455e0f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwzfHxjb2ZmZWUlMjBhdm9jYWRvJTIwdG9hc3R8ZW58MHx8fHwxNzg4MjM5NDYzfDA&ixlib=rb-4.1.0&q=85",
+  choppedCheese: "/images/chopped-cheese.webp",
+  sausageEggCheese: "/images/sausage-egg-cheese.webp",
+  breakfastPlate: "/images/breakfast-plate.webp",
+  wings: "/images/wings.webp",
+  avocadoToast: "/images/avocado-toast.webp",
+  coffee: "/images/coffee.webp",
 };

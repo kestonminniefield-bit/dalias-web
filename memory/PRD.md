@@ -1,4 +1,4 @@
-# PRD — The Corner Kitchen (Restaurant Website)
+# PRD — Dalia's Harlem Cafe (Restaurant Website)
 
 ## Original Problem Statement
 Build a simple, modern, easy-to-use restaurant website with: a searchable, mobile-ready menu; Google Business profile setup; a contact form; a tap-to-call button; map & directions; explicitly NOT ADA compliant. Menu provided covers breakfast sandwiches, wings (5 flavors), lunch (burgers, chopped cheese, philly, tenders, quesadilla), salads, Spanish lunch specials, and beverages.
@@ -7,7 +7,7 @@ Build a simple, modern, easy-to-use restaurant website with: a searchable, mobil
 - Design: "Cute and cozy" (warm cream/espresso/bodega-red palette, Fraunces + Outfit type)
 - Contact messages: saved to DB, viewed in an admin page (no email)
 - Scrambled menu text: organized into clean categories with best interpretation
-- Restaurant name/address/phone: REAL details provided 2026-09-01 — Dalia's Harlem Cafe, 2394 Adam Clayton Powell Jr Blvd, New York, NY 10030, (646) 692-3878. Hours (real, daily): 8:00 AM – 4:30 PM. Hero uses the real storefront photo at /images/storefront.webp.
+- Restaurant name/address/phone: REAL details provided 2026-09-01 — Dalia's Harlem Cafe, 2394 Adam Clayton Powell Jr Blvd, New York, NY 10030, (646) 692-3878. Hours (real, daily): 8:00 AM – 4:30 PM. Hero uses the real storefront photo at /images/storefront.webp. Real dish photos added: chopped cheese + sausage-egg-and-cheese (feature cards), wings + breakfast plate (gallery), plus 2 AI-generated fillers (avocado toast, coffee, Gemini Nano Banana) — all in /app/frontend/public/images/.
 
 ## Architecture
 - Frontend: React (CRA/craco), react-router-dom, framer-motion, lenis smooth scroll, Tailwind. Single-page site at `/` + admin at `/admin`.
