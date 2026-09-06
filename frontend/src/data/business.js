@@ -17,6 +17,7 @@ export const IMAGES = {
   hero: "/images/storefront.webp",
   logo: "/images/logo.webp",
   baconEggCheese: "/images/bacon-egg-cheese.webp",
+  frenchToast: "/images/french-toast.webp",
   interior: "/images/interior.webp",
   choppedCheese: "/images/chopped-cheese.webp",
   sausageEggCheese: "/images/sausage-egg-cheese.webp",

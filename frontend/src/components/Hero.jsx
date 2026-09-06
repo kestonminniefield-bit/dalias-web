@@ -110,8 +110,8 @@ export const Hero = () => {
         >
           <div className="overflow-hidden rounded-[2.5rem] border border-[#E8D8C8] shadow-sm">
             <img
-              src={IMAGES.baconEggCheese}
-              alt="Bacon, egg and cheese on a roll at Dalia's Harlem Cafe"
+              src={IMAGES.frenchToast}
+              alt="French toast with powdered sugar, butter and syrup at Dalia's Harlem Cafe"
               data-testid="hero-food-image"
               className="aspect-[4/3] w-full object-cover md:aspect-[5/4]"
             />
@@ -126,7 +126,7 @@ export const Hero = () => {
           >
             <p className="text-[11px] font-semibold uppercase tracking-widest text-[#5C534D]">Morning favorite</p>
             <p className="font-display text-lg font-semibold text-[#2D2825]">
-              Bacon, Egg & Cheese — <span className="text-[#D95333]">$5</span>
+              French Toast — <span className="text-[#D95333]">$7</span>
             </p>
           </motion.div>
         </motion.div>
