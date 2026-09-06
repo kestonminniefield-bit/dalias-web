@@ -101,10 +101,10 @@ export const Hero = () => {
             className="relative overflow-hidden rounded-[2.5rem] border border-[#E8D8C8] shadow-sm"
           >
             <img
-              src={IMAGES.baconEggCheese}
-              alt="Bacon, egg and cheese on a roll at Dalia's Harlem Cafe"
+              src={IMAGES.hero}
+              alt="Dalia's Harlem Cafe storefront with the pink daisy sign"
               data-testid="hero-image"
-              className="aspect-[4/3] w-full object-cover md:aspect-[5/4]"
+              className="aspect-[4/5] w-full object-cover"
             />
             <div className="absolute inset-0 bg-[#2D2825]/10" />
           </motion.div>
