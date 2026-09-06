@@ -117,7 +117,7 @@ export const Hero = () => {
           >
             <p className="text-[11px] font-semibold uppercase tracking-widest text-[#5C534D]">Morning favorite</p>
             <p className="font-display text-lg font-semibold text-[#2D2825]">
-              Bacon, Egg & Cheese — <span className="text-[#D95333]">$7</span>
+              Bacon, Egg & Cheese — <span className="text-[#D95333]">$5</span>
             </p>
           </motion.div>
         </motion.div>

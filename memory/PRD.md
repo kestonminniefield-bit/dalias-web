@@ -18,7 +18,7 @@ Build a simple, modern, easy-to-use restaurant website with: a searchable, mobil
 - Kinetic hero with masked line-by-line reveal, parallax image, floating special card
 - Editorial marquee ribbon, grain texture overlay, sticky glass nav
 - Highlights section with two food photos (clipped, tilted frames)
-- Searchable menu: 6 numbered chapters (Breakfast, Wings, Lunch, Salads, Spanish Specials, Beverages), 47 items with prices
+- Menu data fully replaced 2026-09-06 with the real Dalia's menu: 8 categories (Breakfast platters, Omelettes, Breakfast Sandwiches roll/hero, Wings 6pc/10pc/deluxe, Lunch Entrees reg/deluxe, Salads, Spanish Lunch Specials sm/md/lg, Beverages). Hero card price updated to $5.
 - Visit section: address, hours, tap-to-call pill, "Get directions" (Google Maps), embedded map
 - Mobile floating "Tap to call" button
 - Contact form saving to MongoDB with toast feedback
