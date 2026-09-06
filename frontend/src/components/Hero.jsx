@@ -24,8 +24,8 @@ export const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-[#FFFBF5] via-transparent to-transparent" />
       </motion.div>
 
-      <div className="relative mx-auto w-full max-w-6xl px-6 pt-32 pb-24">
-        <div className="max-w-2xl">
+      <div className="relative mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-16 px-6 pt-32 pb-24 md:grid-cols-12">
+        <div className="max-w-2xl md:col-span-7">
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
@@ -101,20 +101,36 @@ export const Hero = () => {
             </a>
           </motion.div>
         </div>
-      </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.15, duration: 0.7 }}
-        data-testid="hero-special-card"
-        className="animate-float-soft absolute bottom-10 right-6 rounded-2xl border border-[#E8D8C8] bg-[#FFFBF5]/90 px-5 py-4 shadow-sm backdrop-blur-sm md:right-16"
-      >
-        <p className="text-[11px] font-semibold uppercase tracking-widest text-[#5C534D]">Morning favorite</p>
-        <p className="font-display text-lg font-semibold text-[#2D2825]">
-          Bacon, Egg & Cheese — <span className="text-[#D95333]">$5</span>
-        </p>
-      </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.94, rotate: 4 }}
+          animate={{ opacity: 1, scale: 1, rotate: 2 }}
+          transition={{ delay: 0.5, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+          className="relative md:col-span-5"
+        >
+          <div className="overflow-hidden rounded-[2.5rem] border border-[#E8D8C8] shadow-sm">
+            <img
+              src={IMAGES.baconEggCheese}
+              alt="Bacon, egg and cheese on a roll at Dalia's Harlem Cafe"
+              data-testid="hero-food-image"
+              className="aspect-[4/3] w-full object-cover md:aspect-[5/4]"
+            />
+            <div className="absolute inset-0 bg-[#2D2825]/10" />
+          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.15, duration: 0.7 }}
+            data-testid="hero-special-card"
+            className="animate-float-soft absolute -bottom-16 -left-4 rounded-2xl border border-[#E8D8C8] bg-[#FFFBF5]/95 px-5 py-4 shadow-sm backdrop-blur-sm md:-left-10"
+          >
+            <p className="text-[11px] font-semibold uppercase tracking-widest text-[#5C534D]">Morning favorite</p>
+            <p className="font-display text-lg font-semibold text-[#2D2825]">
+              Bacon, Egg & Cheese — <span className="text-[#D95333]">$5</span>
+            </p>
+          </motion.div>
+        </motion.div>
+      </div>
     </section>
   );
 };
