@@ -14,7 +14,7 @@ import { Footer } from "./components/Footer";
 import { FloatingCall } from "./components/FloatingCall";
 import Admin from "./pages/Admin";
 
-const Home = () => {
+const useLenis = () => {
   useEffect(() => {
     const lenis = new Lenis({ lerp: 0.09 });
     let frame;
@@ -28,30 +28,55 @@ const Home = () => {
       lenis.destroy();
     };
   }, []);
+};
 
+const Shell = ({ children }) => (
+  <div className="min-h-screen bg-[#FFFBF5]">
+    <div className="grain-overlay" />
+    <Navbar />
+    {children}
+    <Footer />
+    <FloatingCall />
+  </div>
+);
+
+const Home = () => {
+  useLenis();
   return (
-    <div className="min-h-screen bg-[#FFFBF5]">
-      <div className="grain-overlay" />
-      <Navbar />
+    <Shell>
       <main>
         <Hero />
         <Marquee />
         <Highlights />
-        <MenuSection />
         <VisitSection />
-        <ContactSection />
       </main>
-      <Footer />
-      <FloatingCall />
-    </div>
+    </Shell>
   );
 };
+
+const MenuPage = () => (
+  <Shell>
+    <main className="pt-16">
+      <MenuSection />
+    </main>
+  </Shell>
+);
+
+const ContactPage = () => (
+  <Shell>
+    <main className="pt-16">
+      <ContactSection />
+    </main>
+  </Shell>
+);
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/menu" element={<MenuPage />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/admin" element={<Admin />} />
       </Routes>
       <Toaster position="bottom-center" richColors />

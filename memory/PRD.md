@@ -10,7 +10,7 @@ Build a simple, modern, easy-to-use restaurant website with: a searchable, mobil
 - Restaurant name/address/phone: REAL details provided 2026-09-01 — Dalia's Harlem Cafe, 2394 Adam Clayton Powell Jr Blvd, New York, NY 10030, (646) 692-3878. Hours (real, daily): 8:00 AM – 4:30 PM. Hero uses the real storefront photo at /images/storefront.webp. Real dish photos added: chopped cheese + sausage-egg-and-cheese (feature cards), wings + breakfast plate (gallery), plus 2 AI-generated fillers (avocado toast, coffee, Gemini Nano Banana) — all in /app/frontend/public/images/.
 
 ## Architecture
-- Frontend: React (CRA/craco), react-router-dom, framer-motion, lenis smooth scroll, Tailwind. Single-page site at `/` + admin at `/admin`.
+- Frontend: React (CRA/craco), react-router-dom, framer-motion, lenis smooth scroll, Tailwind. Pages: Home `/`, Menu `/menu`, Contact `/contact`, Admin `/admin`, plus static printable menu `/menu.html`.
 - Backend: FastAPI + motor (MongoDB). Routes under /api: /auth/login, /auth/logout, /auth/me, /contact (POST), /messages (GET, admin-only).
 - Auth: single seeded admin (env ADMIN_EMAIL/ADMIN_PASSWORD), bcrypt hash, JWT httpOnly cookies, 5-attempt/15-min lockout.
 

@@ -75,7 +75,7 @@ export const Hero = () => {
             className="mt-10 flex flex-wrap items-center gap-4"
           >
             <a
-              href="#menu"
+              href="/menu"
               data-testid="hero-menu-button"
               className="flex items-center gap-2 rounded-full bg-[#D95333] px-7 py-3.5 text-sm font-semibold text-[#FFFBF5] transition-transform duration-200 hover:scale-105 hover:bg-[#BD472A] active:scale-95"
             >

@@ -9,7 +9,7 @@ const GBP_STEPS = [
   "Go to business.google.com and sign in with the restaurant's Google account.",
   `Add "${BUSINESS.name}" with category "Restaurant".`,
   `Verify the address (${BUSINESS.address}) and phone (${BUSINESS.phone}).`,
-  "Add opening hours, this website URL, and the full menu.",
+  "Add opening hours (Mon – Sun, 8:00 AM – 4:30 PM), this website URL, and the menu link (/menu.html).",
   "Upload photos of the storefront and best-selling dishes.",
 ];
 

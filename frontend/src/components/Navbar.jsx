@@ -4,9 +4,9 @@ import { Phone, Menu as MenuIcon, X } from "lucide-react";
 import { BUSINESS, IMAGES } from "../data/business";
 
 const LINKS = [
-  { label: "Menu", href: "#menu" },
-  { label: "Visit", href: "#visit" },
-  { label: "Contact", href: "#contact" },
+  { label: "Menu", href: "/menu" },
+  { label: "Visit", href: "/#visit" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export const Navbar = () => {
@@ -18,7 +18,7 @@ export const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 border-b border-[#E8D8C8] bg-[#FFFBF5]/80 backdrop-blur-xl"
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#top" data-testid="nav-logo" className="flex items-center">
+        <a href="/" data-testid="nav-logo" className="flex items-center">
           <img src={IMAGES.logo} alt="Dalia's Harlem Cafe" className="h-10 w-auto md:h-12" />
         </a>
 
